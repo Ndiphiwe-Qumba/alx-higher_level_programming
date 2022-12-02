@@ -1,7 +1,9 @@
-#!/usr/bin/python3/add_0.py
-def add(a, b):
-    a = 1
-    b = 2
-    print(a, "+" ,b , "=", add)
+#!/usr/bin/python3
+def adder(x , y):
 
-    return 0
+    x = 1
+    y = 2
+    adder = x + y
+    print(x + y)
+    return "%s %d %d" % (x, y, adder)
+
