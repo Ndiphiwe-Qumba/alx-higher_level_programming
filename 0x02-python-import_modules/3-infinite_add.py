@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-
-def sum_all(*args):
-  sum = 0
-  for num in args:
-    if type(num) is list:
-      sum += sum_all(*num)
-    else:
-      sum += int(num)
-  return sum
+if __name__ == "__main__":
+    import sys
+    argv = sys.argv[1:]
+    argv_count = len(argv)
+    index = 1
+    res = 0
+    while index <= argv_count:
+        res += int(sys.argv[index])
+        index += 1
+    print("{:d}".format(res))
